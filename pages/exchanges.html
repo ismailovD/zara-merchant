@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/exchanges.css">
+        <link rel="icon" href="../images/icon/favicon.ico">
+        <title>Exchanges</title>
+    </head>
+    <body class="body">
+        <aside class="side-bar active">
+            
+            <div class="side-bar__center">
+                <span class="side-bar__btn">
+                    <svg class="side-bar__btn-icon">
+                        <use xlink:href="../svg/sprite.svg#open-btn"></use>
+                    </svg>
+                </span>
+                <a href="" class="side-bar__logo">
+                    <picture class="side-bar__pic">
+                        <img src="../images/logotype.webp"
+                            class="side-bar__logo-img"
+                            alt="side-bar">
+                        <img src="../images/logo.webp" alt="mini-logo"
+                            class="side-bar__img">
+                    </picture>
+
+                </a>
+                <ul class="side-bar__list">
+                    <li class="side-bar__item global-item">
+                        <a href="#!" class="side-bar__link">
+                            <svg class="side-bar__icon">
+                                <use xlink:href="../svg/sprite.svg#home"></use>
+                            </svg>
+                            <span class="side-bar__link-text">Home</span>
+                        </a>
+                        <span class="side-bar__count" data-count="0"></span>
+                    </li>
+                    <li class="side-bar__item global-item">
+                        <a href="#!" class="side-bar__link ">
+                            <svg class="side-bar__icon">
+                                <use xlink:href="../svg/sprite.svg#analystics"></use>
+                            </svg>
+                            <span class="side-bar__link-text"> Analystics</span>
+                        </a>
+                        <span class="side-bar__count" data-count="0"></span>
+                    </li>
+                    <li class="side-bar__item global-item visited">
+                        <a href="#!" class="side-bar__link">
+                            <svg class="side-bar__icon">
+                                <use xlink:href="../svg/sprite.svg#returns"></use>
+                            </svg>
+                            <span class="side-bar__link-text"> Returns</span>
+                        </a>
+                        <span class="side-bar__count" data-count="16">16</span>
+                    </li>
+                    <li class="side-bar__item global-item">
+                        <a href="#!" class="side-bar__link">
+                            <svg class="side-bar__icon">
+                                <use xlink:href="../svg/sprite.svg#orders"></use>
+                            </svg>
+                            <span class="side-bar__link-text"> Risky Orders</span>
+                        </a>
+                        <span class="side-bar__count" data-count="0"></span>
+                    </li>
+                    <li class="side-bar__item global-item">
+                        <a href="#!" class="side-bar__link">
+                            <svg class="side-bar__icon">
+                                <use
+                                    xlink:href="../svg/sprite.svg#integrations"></use>
+                            </svg>
+                            <span class="side-bar__link-text"> Integrations</span>
+                        </a>
+                        <span class="side-bar__count" data-count="0"></span>
+                    </li>
+                    <li class="side-bar__item global-item">
+                        <a href="#!" class="side-bar__link">
+                            <svg class="side-bar__icon">
+                                <use xlink:href="../svg/sprite.svg#store"></use>
+                            </svg>
+                            <span class="side-bar__link-text"> Store Credits</span>
+                        </a>
+                        <span class="side-bar__count" data-count="0"></span>
+                    </li>
+                    <li class="side-bar__item global-item">
+                        <a href="#!" class="side-bar__link">
+                            <svg class="side-bar__icon">
+                                <use xlink:href="../svg/sprite.svg#automation"></use>
+                            </svg>
+                            <span class="side-bar__link-text"> Automation</span>
+                        </a>
+                        <span class="side-bar__count" data-count="0"></span>
+                    </li>
+                </ul>
+                <div class="side-bar__settings "> 
+                    <div class="side-bar__dropdown">
+                        <svg class="side-bar__icon">
+                            <use xlink:href="../svg/sprite.svg#settings"></use>
+                        </svg>
+                        <span class="side-bar__dropdown-btn">Settings
+                        </span>
+                        <svg class="side-bar__dropdown-icon">
+                            <use
+                                xlink:href="../svg/sprite.svg#arrow-down"></use>
+                        </svg>
+                        
+                    </div>
+                    <ul class="side-bar__dropdown-list">
+                        <li class="side-bar__dropdown-item ">
+                            <a href="#!" class="side-bar__link global-item">Profile</a>
+                        </li>
+                        <li class="side-bar__dropdown-item ">
+                            <a href="#!" class="side-bar__link global-item">Log out</a>
+                        </li>
+                        <li class="side-bar__dropdown-item ">
+                            <a href="#!" class="side-bar__link global-item">Log in</a>
+                        </li>
+                        <li class="side-bar__dropdown-item ">
+                            <a href="#!" class="side-bar__link global-item">Log out</a>
+                        </li>
+                        <li class="side-bar__dropdown-item ">
+                            <a href="#!" class="side-bar__link global-item">Upgrades</a>
+                        </li>
+                        <li class="side-bar__dropdown-item ">
+                            <a href="#!" class="side-bar__link global-item">Your stars</a>
+                        </li>
+                        <li class="side-bar__dropdown-item ">
+                            <a href="#!" class="side-bar__link global-item">Your Like`s</a>
+                        </li>
+                        <li class="side-bar__dropdown-item ">
+                            <a href="#!" class="side-bar__link global-item">Comments</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#!" class="side-bar__link side-bar__help global-item">
+                <svg class="side-bar__help-icon">
+                    <use xlink:href="../svg/sprite.svg#unknown"></use>
+                </svg>
+                <span class="side-bar__link-text"> Help Center</span>
+            </a>
+        </aside>
+        <div class="global__content">
+            <header class="global__header">
+                <form class="global__form">
+                    <label class="global__search">
+                        <svg class="global__search-icon">
+                            <use xlink:href="../svg/sprite.svg#search"></use>
+                        </svg>
+                        <input class="global__search-input" type="text"
+                            placeholder="Search...">
+                    </label> 
+                    <div class="global__search-dropdown">
+                        <ul class="global__search-list">
+                            <li class="global__search-item">Search item 1</li>
+                            <li class="global__search-item">Search item 2</li>
+                            <li class="global__search-item">Search item 3</li>
+                            <li class="global__search-item">Search item 4</li>
+                            <li class="global__search-item">Search item 5</li>
+                            <li class="global__search-item">Search item 6</li>
+                            <li class="global__search-item">Search item 7</li>
+                            <li class="global__search-item">Search item 8</li>
+                            <li class="global__search-item">Search item 9</li>
+                            <li class="global__search-item">Search item 10</li>
+                            <li class="global__search-item">Search item 11</li>
+                            <li class="global__search-item">Search item 12</li>
+                            <li class="global__search-item">Search item 13</li>
+                            <li class="global__search-item">Search item 14</li>
+                            <li class="global__search-item">Search item 15</li>
+                            <li class="global__search-item">Search item 16</li>
+                            <li class="global__search-item">Search item 17</li>
+                            <li class="global__search-item">Search item 18</li>
+                            <li class="global__search-item">Search item 19</li>
+                            <li class="global__search-item">Search item 20</li>
+                            <li class="global__search-item">Search item 21</li>
+                            <li class="global__search-item">Search item 22</li>
+                            <li class="global__search-item">Search item 23</li>
+                            <li class="global__search-item">Search item 24</li>
+                            <li class="global__search-item">Search item 25</li>
+                            <li class="global__search-item">Search item 26</li>
+                            <li class="global__search-item">Search item 27</li>
+                            <li class="global__search-item">Search item 28</li>
+                            <li class="global__search-item">Search item 29</li>
+                            <li class="global__search-item">Search item 30</li>
+                        </ul>
+                    </div>
+                </form>
+                <div class="global__wrapper">
+                <div class="global__notification">
+                    <svg class="global__notification-icon">
+                        <use xlink:href="../svg/sprite.svg#bell"></use>
+                    </svg>
+                    <span class="global__notification-count">6</span>
+                </div>
+
+                <div class="global__auth user">
+                    <div class="user__info">
+                        <div class="user__avatar">
+                            <img src="../images/avatar.webp" alt="ava"
+                                class="user__img">
+                        </div>
+                        <button class="user__dropdown-btn"> 
+                            <p class="user__name">Ronnie <span
+                                    class="user__second-name">Woodkin</span>
+                            </p> 
+                            <svg class="user__dropdown-icon">
+                                <use xlink:href="../svg/sprite.svg#arrow-down"></use>
+                            </svg>
+                        </button>
+                        
+                    </div>
+                    <ul class="user__list">
+                        <li class="user__item">
+                            <a href="#!" class="user__link">
+                                <span class="user__icon-box">
+                                    <svg class="user__icon" data-name="user">
+                                        <use xlink:href="../svg/sprite.svg#user"></use>
+                                    </svg>
+                                </span> 
+                                <span class="user__link-name">Profile </span>
+                            </a>
+                        </li>
+                        <li class="user__item">
+                            <a href="#!" class="user__link">
+                                <span class="user__icon-box">
+                                    <svg class="user__icon">
+                                        <use xlink:href="../svg/sprite.svg#credit-card"></use>
+                                    </svg>
+                                </span>  
+                                <span class="user__link-name">Billing</span>
+                            </a>
+                        </li>
+                        <li class="user__item">
+                            <a href="#!" class="user__link">
+                                <span class="user__icon-box">
+                                    <svg class="user__icon">
+                                        <use xlink:href="../svg/sprite.svg#exit"></use>
+                                    </svg>
+                                </span>  
+                                <span class="user__link-name">Log out </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </header>
+
+            <main class="exchanges global__main">
+                <div class="exchanges__top-panel">
+                    <h1 class="exchanges__title">Exchanges</h1>
+                    <div class="exchanges__upgrade">
+                        <label class="checkbox-upgrade">
+                            <input type="checkbox" class="main-checkbox">
+                            <span class="checkbox-upgrade-switch"
+                                data-label-on="On" data-label-off="Off"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="exchanges__inner">
+                    <div class="exchanges__wrapper exchanges__options">
+                        <h2 class="exchanges__wrapper-title title__lvl2">Exchange
+                            options for customer</h2>
+                        <ul class="exchanges__options-list">
+                            <li class="exchanges__options-item">
+
+                                <input class="exchanges__input exchanges__radio"
+                                    type="radio" name="option" id="option-1" disabled>
+                                <label for="option-1" class="exchanges__label">
+                                    <span class="exchanges__input-circle"></span>
+                                    Allow exchange for all products
+                                    <span class="exchanges__options-comment">
+                                        (Contact us to enable this)</span>
+                                </label>
+
+                            </li>
+                            <li class="exchanges__options-item">
+
+                                <input class="exchanges__input exchanges__radio"
+                                    type="radio" name="option" id="option-2">
+                                <label for="option-2" class="exchanges__label">
+                                    <span class="exchanges__input-circle"></span>
+                                    Allow exchange to color/size variants with
+                                    price ranging min
+                                    <span class="exchanges__options-comment">
+                                        (80<span class="symbol symbol-percent">%</span> to 110<span class="symbol symbol-percent">%</span>)</span>
+                                </label>
+
+                            </li>
+                            <li class="exchanges__options-item">
+                                <input class="exchanges__input exchanges__radio"
+                                    type="radio" name="option" id="option-3">
+                                <label for="option-3" class="exchanges__label">
+                                    <span class="exchanges__input-circle"></span>
+                                    Allow exchange only to same product as a
+                                    replacement
+                                    <span class="exchanges__options-comment">
+                                    </span>
+                                </label>
+                            </li>
+                            <li class="exchanges__options-item">
+
+                                <input class="exchanges__input exchanges__radio"
+                                    type="radio" name="option" id="option-4" disabled> 
+                                <label for="option-4" class="exchanges__label">
+                                    <span class="exchanges__input-circle"></span>
+                                    Allow exchange order even if exchange item
+                                    is out of stock
+                                    <span class="exchanges__options-comment">
+                                        (Not recommended) </span>
+                                </label>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="exchanges__wrapper exchanges__payment">
+                        <h2 class="exchanges__wrapper-title title__lvl2">Exchange
+                            payment</h2>
+                        <div class="exchanges__payment-checkbox">
+                            <label for="checked-1"
+                                class="exchanges__label">
+                            <input id="checked-1" type="checkbox"
+                                class="exchanges__input
+                                exchanges__payment-input">
+                            <span class="exchanges__check">
+                                <svg class="exchanges__check-icon">
+                                    <use
+                                        xlink:href="../svg/sprite.svg#choose"></use>
+                                </svg>
+                            </span>
+                            
+                                Collect price difference if it is more than
+                            </label>
+                            <span class="exchanges__payment-price">
+                                <span class="symbol symbol-dollar">$</span>0
+                            </span>
+                        </div>
+                    </div>
+                    <div class="exchanges__wrapper exchanges__speed">
+                        <h2 class="exchanges__wrapper-title title__lvl2">Exchange
+                            speed</h2>
+                        <ul class="exchanges__speed-list">
+                            <li class="exchanges__speed-item">
+                                <input class="exchanges__input exchanges__radio"
+                                    type="radio" name="speed" id="speed-1">
+                                <label for="speed-1" class="exchanges__label">
+                                    <span class="exchanges__input-circle"></span>
+                                    Ship exchange order after receiving the
+                                    original item
+                                </label>
+                                <div class="exchanges__speed-secondary" data-id="speed-1">
+                                    <input id="speed-check-1" type="checkbox"
+                                        class="exchanges__input
+                                        exchanges__speed-input">
+                                    <span class="exchanges__speed-check">
+                                        <svg class="exchanges__speed-icon">
+                                            <use
+                                                xlink:href="../svg/sprite.svg#choose"></use>
+                                        </svg>
+                                    </span>
+                                    <label for="speed-check-1"
+                                        class="exchanges__label exchanges__speed-label">
+                                        Put a hold charge on the card for
+                                        expedited exchange
+                                    </label> 
+                                </div>
+                            </li>
+                            <li class="exchanges__speed-item">
+                                <input class="exchanges__input exchanges__radio"
+                                    type="radio" name="speed" id="speed-2">
+                                <label for="speed-2" class="exchanges__label">
+                                    <span class="exchanges__input-circle"></span>
+                                    Ship exchange order after exchange request
+                                    is received
+                                </label>
+                                <div class="exchanges__speed-secondary" data-id="speed-2">
+                                    <input id="speed-check-2" type="checkbox"
+                                        class="exchanges__input
+                                        exchanges__speed-input">
+                                    <span class="exchanges__speed-check">
+                                        <svg class="exchanges__speed-icon">
+                                            <use
+                                                xlink:href="../svg/sprite.svg#choose"></use>
+                                        </svg>
+                                    </span>
+                                    <label for="speed-check-2"
+                                        class="exchanges__label exchanges__speed-label">
+                                        Put a hold charge on the card for
+                                        expedited exchange
+                                    </label> 
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+
+        <script src="../js/common.js"></script>
+        <script src="../js/exhanges.js"></script>
+    </body>
+</html>
