@@ -1,5 +1,4 @@
-@import '_global.css';
-
+ 
 .add-reason {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -880,4 +879,14 @@
         width: 100%;
         margin-bottom: 30px
     } 
+    .add-reason.change .content__left {
+        padding: 10px;
+    }
+    .add-reason.change .collection__options{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .add-reason.change .collection__item:not(:last-child){
+        margin-bottom:20px;
+    }
 }

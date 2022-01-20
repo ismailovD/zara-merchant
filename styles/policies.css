@@ -1,5 +1,4 @@
-@import '_global.css';
-
+ 
 .policies__main {
     padding: 52px 50px 30px 49px;
     background: var(--white);
@@ -187,5 +186,18 @@
         min-width: 155px
     }
  
+}
+@media (max-width: 820px) {
+    
+    
+    .policies__top-panel {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .policies__create-remove {
+       margin-top: 20px;
+    }
+ 
+
 }
 

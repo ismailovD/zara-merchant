@@ -8,7 +8,7 @@ const   sortOrder = document.querySelectorAll('[data-num="0"]'),
         customerId = document.querySelectorAll('.customer__id'),
         table = document.querySelector('table'),
         tableTitleRow = document.querySelector('.table__title-row'),
-        tableRow = '.table__row',
+        tableRow = '.table__thing-row',
         tableCell = '.table__info';
         
  
@@ -63,6 +63,7 @@ function sortCustomerId(){
 }
   
 function renderRows(list) {   
+    console.log(document.getElementById(list[0]).closest(tableRow));
         list.forEach(code => { 
             document.getElementById(code).closest(tableRow).setAttribute("data-code", list.indexOf(code));
         }) 

@@ -1,5 +1,4 @@
-@import '_global.css';
-
+ 
 .reason__main {
     padding: 52px 50px 30px 49px;
     background: var(--white);
@@ -194,5 +193,15 @@
      .reason__main {
         padding: 40px 20px 30px 20px
     }
+
+    .reason__top-panel {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .reason__create-remove {
+       margin-top: 20px;
+    }
+
      
 }
+ 

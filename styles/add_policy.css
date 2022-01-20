@@ -1,4 +1,4 @@
-@import '_global.css';
+
 
 .add-policy .select.show-select .select__btn {
     border: none
@@ -342,6 +342,9 @@
     }
     .add-policy.change .commonly__list {
         margin-right: 0;
+    } 
+    .add-policy.change .policy__create {
+       padding: 30px;
     } 
     .commonly__list {
         max-width: 100%
