@@ -1,0 +1,194 @@
+ 
+.p22__title {
+    text-align: left;
+    font-size: 30px;
+    line-height: 35px;
+    padding-left: 0
+}
+
+.p22__wrapper {
+    max-width: 340px;
+    width: 100%
+}
+
+.p22__inner {
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 40px
+}
+
+.bank-card {
+    padding: 20px 40px 30px 30px;
+    background: var(--white);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--grey-2)
+}
+
+.bank-card__block {
+    font-family: var(--f700-lato);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 30px;
+    color: var(--purple);
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.block__number {
+    width: 100%;
+    margin-bottom: 20px
+}
+
+.block__date {
+    max-width: 120px;
+    width: 100%;
+    margin-right: 30px
+}
+
+.block__cvv {
+    max-width: 120px;
+    width: 100%;
+    position: relative
+}
+
+.bank-card__input {
+    border-radius: 3px;
+    border: 1px solid var(--grey-2);
+    padding: 10px 20px;
+    font-family: var(--f400-lato);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--blue)
+}
+
+.bank-card__input:focus {
+    outline: none;
+    border: 1px solid var(--purple)
+}
+
+.bank-card__date::-webkit-input-placeholder {
+    font-family: var(--f400-lato);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--purple)
+}
+
+.bank-card__date::-moz-placeholder {
+    font-family: var(--f400-lato);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--purple)
+}
+
+.bank-card__date:-ms-input-placeholder {
+    font-family: var(--f400-lato);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--purple)
+}
+
+.bank-card__date::-ms-input-placeholder {
+    font-family: var(--f400-lato);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--purple)
+}
+
+.bank-card__date::placeholder {
+    font-family: var(--f400-lato);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--purple)
+}
+
+.bank-card__icon {
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: var(--purple);
+    position: absolute;
+    bottom: 15px;
+    right: 21px;
+    cursor: pointer;
+    z-index: 10
+}
+
+.p22 .btns {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start
+}
+
+.p22 .choose__card {
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 24px 30px 24px 20px
+}
+
+.p22 .choose__card:first-child {
+    border-bottom: 1px solid var(--grey-2)
+}
+
+.p22 .choose__card-title {
+    font-family: var(--f500-lato);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.6px;
+    padding-left: 38px;
+    margin-bottom: 0
+}
+
+.p22 .choose__label {
+    right: auto
+}
+
+@media (max-width: 1199px) { 
+    
+  
+    .p22__wrapper {
+        max-width: 100%
+    }
+ 
+}
+
+@media (max-width: 991px) {
+    .p22 .btns {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center
+    }
+}
+
+@media (max-width: 767px)  { 
+    .p22__title {
+        padding-left: 30px;
+        text-align: center
+    }
+}
+@media (max-width: 575px)  {
+    .p22 .choose__card-title {
+        font-size: 16px;
+        line-height: 19.2px
+    }
+
+}

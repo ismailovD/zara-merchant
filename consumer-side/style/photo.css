@@ -1,0 +1,389 @@
+  
+.photo {
+    padding-top: 88px;
+    padding-bottom: 100px;
+    background: var(--bg-other-main)
+}
+
+.photo__word {
+    color: var(--red)
+}
+
+.photo__empty {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 6px;
+    border: 1px dashed var(--blue);
+    cursor: pointer;
+    height: 100%
+}
+
+.photo__card {
+    height: 270px;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 30px
+}
+
+.photo__card-add {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 6px;
+    -o-object-position: center;
+    object-position: center
+}
+
+.photo__card-delete {
+    width: 35px;
+    height: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 5px;
+    right: 25px;
+    top: 10px;
+    background: var(--white);
+    cursor: pointer
+}
+
+.photo__card-icon {
+    width: 13px;
+    height: 13px;
+    fill: var(--red)
+}
+
+.photo__row {
+    margin-bottom: 70px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content
+}
+
+.photo__icon {
+    width: 70px;
+    height: 59px;
+    fill: var(--reason-input-circle)
+}
+
+.photo__load {
+    height: 100%;
+    width: calc(100% - 20px);
+    padding-top: 60px;
+    border: 1px dashed var(--blue);
+    display: block;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 10;
+    background: var(--white)
+}
+
+.photo__load-text {
+    font-family: var(--f400-lato);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 60px;
+    text-align: center;
+    color: var(--blue);
+    margin-bottom: 23px
+}
+
+.photo__load-line {
+    width: 50%;
+    height: 5px;
+    background: var(--loading-bg);
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto
+}
+
+.photo__load-progress {
+    width: 0%;
+    height: 5px;
+    border-radius: 2px;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    background: var(--blue);
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.photo__add {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: transparent;
+    border: 2px solid var(--purple);
+    border-radius: 6px
+}
+
+.photo__plus {
+    width: 20px;
+    height: 20px;
+    fill: var(--purple)
+}
+
+.photo__more {
+    color: var(--purple);
+    font-family: var(--f400-lato);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px
+}
+
+.photo__modal {
+    width: 90%;
+    border: 2px solid var(--blue);
+    -webkit-box-shadow: var(--btn-shadow);
+    box-shadow: var(--btn-shadow);
+    border-radius: 6px;
+    padding: 30px;
+    position: fixed;
+    background: var(--white);
+    top: 10%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) scale(0);
+    -ms-transform: translateX(-50%) scale(0);
+    transform: translateX(-50%) scale(0);
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    z-index: 2
+}
+
+.photo__modal.active {
+    -webkit-transform: translateX(-50%) scale(1);
+    -ms-transform: translateX(-50%) scale(1);
+    transform: translateX(-50%) scale(1)
+}
+
+.photo__table {
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(163px, 1fr))
+}
+
+.photo__table-item {
+    max-width: 270px;
+    height: 163px;
+    cursor: pointer;
+    position: relative
+}
+
+.photo__table-img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.photo__modal-text {
+    position: relative;
+    margin-bottom: 40px
+}
+
+.photo__modal-close {
+    fill: var(--black);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    cursor: pointer
+}
+
+.photo__modal-title {
+    font-family: var(--f700-roboto);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: var(--black);
+    text-align: center
+}
+
+.photo__table-choose {
+    width: 35px;
+    height: 35px;
+    background: var(--white);
+    display: none;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 5px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px
+}
+
+.photo__table-img.active+.photo__table-choose {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.photo__table-icon {
+    width: 13px;
+    height: 13px;
+    fill: var(--blue)
+}
+
+.photo__btn {
+    margin-bottom: 0
+}
+
+@media (max-width: 767px)  {
+    .photo__modal {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        -webkit-transform: translateX(0) scale(0);
+        -ms-transform: translateX(0) scale(0);
+        transform: translateX(0) scale(0);
+        border-radius: 0;
+        border: none;
+        padding: 15px;
+        z-index: 20;
+    }
+
+    .photo__modal.active {
+        -webkit-transform: translateX(0) scale(1);
+        -ms-transform: translateX(0) scale(1);
+        transform: translateX(0) scale(1)
+    }
+
+    .photo__table {
+        grid-gap: 8px;
+        grid-template-columns: repeat(auto-fill, minmax(98px, 1fr))
+    }
+
+    .photo__table-item {
+        max-width: 98px;
+        height: 98px;
+        cursor: pointer;
+        position: relative
+    }
+
+    .photo__card {
+        height: 220px
+    }
+
+    .photo__add {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        padding: 11px 0
+    }
+
+    .photo__more {
+        margin-right: 10px
+    }
+
+    .photo__row {
+        margin-bottom: 30px
+    }
+
+    .photo__btn {
+        height: -webkit-fit-content !important;
+        height: -moz-fit-content !important;
+        height: fit-content !important
+    }
+
+}
+@media (max-width: 575px)  {
+    .photo__load-text {
+        width: 100%;
+        font-size: 16px;
+        line-height: 24px
+    }
+
+    .photo__load {
+        height: 100%;
+        width: calc(100% - 15px);
+        padding-top: 60px;
+        border: 1px dashed var(--blue);
+        display: block;
+        border-radius: 6px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        z-index: 10;
+        background: var(--white)
+    }
+
+}
+
+@media (max-width: 420px) {
+    .photo__card {
+        height: 180px
+    }
+
+    .photo__one {
+        width: 100% !important;
+        height: 290px !important
+    }
+
+    .photo__load-text {
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto
+    }
+  
+}
+
+@media (max-width: 374px) {
+     
+    .photo__card {
+        height: 150px
+    }
+ 
+}

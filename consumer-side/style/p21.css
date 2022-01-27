@@ -1,0 +1,135 @@
+ 
+.p21 .row__title {
+    margin-bottom: 30px
+}
+ 
+.p21__title {
+    text-align: left;
+    font-size: 30px;
+    line-height: 35px;
+    padding-left: 0
+}
+
+.exchange__wrapper {
+    max-width: 300px;
+    width: 100%
+}
+
+.exchange__content {
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    background: var(--white)
+}
+
+.p21__content {
+    padding: 28px 30px 26px
+}
+.payment-list {
+    width: 100%
+}
+
+.payment-item {
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--blue);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 10px
+}
+ 
+.payment-item:last-child {
+    margin-bottom: 0
+}
+
+.payment-property {
+    font-family: var(--f700-lato);
+    font-weight: 700;
+    margin-right: 5px
+}
+
+.payment-value {
+    font-family: var(--f400-lato);
+    font-weight: 400
+}
+.p21__payment-list {
+    padding-bottom: 27px;
+    border-bottom: 1px solid var(--grey);
+    margin-bottom: 25px
+}
+
+.p21__methods-pay {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.p21__methods-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.p21__methods-icon {
+    width: 35px;
+    height: 35px;
+    fill: var(--light-blue);
+    margin-bottom: 10px
+}
+
+.upi-qr {
+    fill: var(--white);
+    stroke: var(--light-blue)
+}
+
+.p21__methods-desc {
+    font-family: var(--f400-lato);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--blue)
+}
+
+@media (max-width: 991px) {
+    .exchange__wrapper {
+        max-width: 100%
+    }
+}
+
+@media (max-width: 767px)  { 
+    .p21__title  {
+        padding-left: 30px;
+        text-align: center
+    }
+}
+@media (max-width: 575px)  {
+    .p21__methods-desc {
+        font-size: 14px
+    }
+    .payment-item {
+        font-size: 16px;
+        margin-bottom: 7px
+    }
+ 
+}
+
+@media (max-width: 420px) {
+  
+ 
+    .payment-item {
+        margin-bottom: 7px;
+        font-size: 16px
+    }
+ 
+}

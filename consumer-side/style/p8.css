@@ -1,0 +1,31 @@
+ 
+.p8 .choose__card {
+    padding: 13px 57px 13px 30px;
+    min-height: 70px;
+    height: 100%;
+    margin-bottom: 0
+}
+
+.p8 .choose__card.active {
+    border: 2px solid var(--blue);
+    padding: 12px 56px 12px 29px
+}
+
+.p8 .choose__span {
+    color: var(--purple)
+}
+
+@media (max-width: 1199px) { 
+    
+    .p8 .choose__row>* {
+        margin-bottom: 30px
+    }
+   
+}
+
+@media (max-width: 767px)  {
+
+}
+@media (max-width: 575px)  {
+
+}

@@ -1,0 +1,96 @@
+
+.p6__row {
+    margin-bottom: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.p6 .choose__card {
+    max-width: 345px;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 36px 40px 40px;
+    background: var(--reason-input-bg);
+    border-radius: 6px;
+    border: 1px solid transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    position: relative
+}
+
+.p6 .choose__card.active {
+    border: 2px solid var(--blue);
+    padding: 35px 39px 39px 39px
+}
+
+.p6 .choose__card-title  {
+    margin-bottom: 33px
+}
+
+.p6__label {
+    width: 100%;
+    text-align: center;
+    cursor: pointer
+}
+
+@media (max-width: 1199px) { 
+    .p6 .choose__card  {
+        max-width: 300px
+    } 
+    .p6 .choose__card-title {
+        margin-bottom: 22px
+    }
+ 
+}
+
+@media (max-width: 991px) {
+    .p6 .choose__card {
+        max-width: 100%;
+        padding: 24px 30px 24px 70px
+    }
+
+    .p6 .choose__card.active {
+        padding: 23px 29px 23px 69px
+    }
+    .p6 {
+        padding-top: 45px
+    }
+
+    .p6__label {
+        position: absolute;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        top: 27px;
+        left: 25px;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content
+    }
+
+    .choose__card.active .p6__label {
+        top: 26px;
+        left: 24px
+    }
+}
+
+@media (max-width: 767px)  {
+
+}
+@media (max-width: 575px)  {
+
+}
