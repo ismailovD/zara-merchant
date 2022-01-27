@@ -132,7 +132,7 @@ class Add {
                 this.removeItems();
             }
             if (this.input.value.length > 0) { 
-                this.addChoose();
+                // this.addChoose();
                 let filterArr = this.filterItems(arrCountry, this.input.value);
                 if (filterArr.length > 0) {
                     this.showList(filterArr)
@@ -145,8 +145,10 @@ class Add {
                 e.preventDefault()
             }
         }); 
-        this.input.addEventListener('focusout', (e) => {
+        this.input.addEventListener('focusout', () => {
+           setTimeout(() => {
             this.list.classList.remove('visible'); 
+           }, 100)
         }); 
     }
     filterItems(arr, query) {
@@ -175,15 +177,15 @@ class Add {
         this.list.classList.remove('visible');
         this.removeItems()
     }
-    selectItem() {
+    selectItem() { 
         this.items = this.add.querySelectorAll('.add__item');
-        this.listControl()
-        this.items.forEach(el => {
-            el.addEventListener('click', (e) => {
+        this.listControl()  
+        this.items.forEach(el => { 
+            el.addEventListener('click', (e) => { 
                 e.preventDefault();
                 this.input.value = el.textContent;
                 this.hideList(); 
-                this.addChoose();
+                // this.addChoose();
             })
         })
 
@@ -238,7 +240,7 @@ class Add {
                     j++; 
                 }  
                 console.log(j, scrl );
-                if(j - this.itemMax >= 0 && j >= scrl - 1) {    
+                if(j - this.itemMax >= 0 && j >= scrl -1 ) {    
                     this.list.scroll(0, (j - this.itemMax) *  this.itemHeight + this.itemHeight);   
                     scrl2 = j; 
                 } 
@@ -253,7 +255,7 @@ class Add {
                     
                 } 
                 console.log(j, scrl);
-                if(j < this.items.length - this.itemMax && j <= scrl2 - this.itemMax + 1) { 
+                if(j < this.items.length - this.itemMax && j <= scrl2 - this.itemMax + 1 ) { 
                     this.list.scroll(0, this.itemHeight * j) ; 
                     scrl = j;
                 }
@@ -267,24 +269,24 @@ class Add {
     selected(elem){    
         window.addEventListener('keydown', (e) => { 
             if( e.keyCode === 13) {
-                this.input.value = elem.textContent;
-                this.list.classList.remove('visible'); 
-                this.addChoose()
+                this.input.value = elem.textContent; 
+                this.hideList() 
+                // this.addChoose()
             }
                     
         }, {once: true});
         
     }
-    addChoose(){ 
-        window.addEventListener('keydown', (e) => { 
-            if( e.keyCode === 13) {
-                if (this.input.value.length > 0) { 
-                    // this.targetShow(); 
-                    this.list.classList.remove('visible')
-                } 
-            }     
-        }, {once: true}) 
-    }
+    // addChoose(){ 
+    //     window.addEventListener('keydown', (e) => { 
+    //         if( e.keyCode === 13) {
+    //             if (this.input.value.length > 0) { 
+    //                 // this.targetShow(); 
+    //                 this.list.classList.remove('visible')
+    //             } 
+    //         }     
+    //     }, {once: true}) 
+    // }
 }
 
 
