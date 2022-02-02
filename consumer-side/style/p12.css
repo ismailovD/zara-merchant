@@ -78,11 +78,7 @@
 }
 
 @media (max-width: 1199px) { 
-    
-    .p12 .choose__card  {
-        max-width: 300px
-    }
- 
+     
     .p12 .choose__card-title {
         margin-bottom: 22px
     } 

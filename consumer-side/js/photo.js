@@ -18,7 +18,7 @@ btn.addEventListener('click', (e)=> {
 let photoArr = [];
 let count = 0;
 
-
+ 
 photos.forEach(e => {
     e.addEventListener('click', () => {
         e.classList.toggle('active')

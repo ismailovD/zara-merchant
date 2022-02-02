@@ -22,7 +22,7 @@ window.addEventListener('load', () => {
 
 
 cards.forEach(e => {
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < cards.length; i++) {
         cards[i].classList.add('show')
     } 
     e.addEventListener('click', () => {

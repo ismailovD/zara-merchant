@@ -1,4 +1,4 @@
-const radioReason = document.querySelectorAll('.reason__label'), 
+const radioReason = document.querySelectorAll('.reason__label'),
     radioChoose = document.querySelectorAll('.choose__label'),
     otherTextarea = document.querySelector('.other__textarea'),
     closeTextarea = document.querySelector('.other__close'),   
@@ -64,5 +64,3 @@ btn.addEventListener('click', (e)=> {
         sessionStorage.setItem('boolean' , "true")
         location.href = pathLocation; 
 })
-
- 

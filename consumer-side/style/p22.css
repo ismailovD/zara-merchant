@@ -141,7 +141,7 @@
 .p22 .choose__card {
     border: none;
     border-radius: 0;
-    margin-bottom: 0;
+    margin: 0;
     padding: 24px 30px 24px 20px
 }
 
@@ -161,6 +161,8 @@
 .p22 .choose__label {
     right: auto
 }
+
+ 
 
 @media (max-width: 1199px) { 
     

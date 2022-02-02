@@ -32,8 +32,7 @@
     justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
-    margin-bottom: 30px;
+    align-items: center; 
     cursor: pointer
 }
 
@@ -174,11 +173,7 @@
         padding-top: 45px;
         padding-bottom: 50px
     }
-
-    .reason__label {
-        margin-bottom: 15px
-    }
-
+ 
     .other {
         margin-bottom: 40px
     }

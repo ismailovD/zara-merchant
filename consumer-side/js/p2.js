@@ -91,8 +91,7 @@ class Add {
             if( e.keyCode === 40 && j < this.items.length ) { 
                 if(j < this.items.length - 1){
                     j++; 
-                }  
-                console.log(j, scrl, scrl2);
+                }   
                 if(j - this.itemMax >= 0 && j >= scrl  ) {    
                     this.list.scroll(0, (j - this.itemMax) *  this.itemHeight + this.itemHeight);   
                     scrl2 = j - this.itemMax; 
@@ -106,8 +105,7 @@ class Add {
                 if(j > 0){
                     j--;
                     
-                } 
-                console.log(scrl2, scrl , j);
+                }  
                 if(j < this.items.length - this.itemMax && j <= scrl2) { 
                     this.list.scroll(0, this.itemHeight * j) ; 
                     scrl = j + this.itemMax;

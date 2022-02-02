@@ -22,12 +22,10 @@ radioChoose.forEach(elem => {
     elem.addEventListener('click', () => {
         radioChoose.forEach(k => {
             k.closest(parent).classList.remove('active')
-        }) 
-        if(elem.querySelector('input').checked){
+        })  
             elem.closest(parent).classList.add('active');
             pathLocation = locationObj[elem.getAttribute('data-location')];
-            btn.disabled = false;
-        }  
+            btn.disabled = false; 
     })
 })
  

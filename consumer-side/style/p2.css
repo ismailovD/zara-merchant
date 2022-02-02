@@ -148,7 +148,9 @@
     line-height: 21px;
     color: var(--purple)
 }
-
+.p2__row>* {
+    margin-bottom: 30px;
+}
 .card {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -165,8 +167,8 @@
     transition: 0.2s;
     cursor: pointer;   
     max-width: calc(50% - 30px);
-    width: 100%;
-    margin: 15px; 
+    width: 100%; 
+    height: 100%;
 }
 
 .card__target {

@@ -1,4 +1,4 @@
-burgerBtn = document.querySelector('.burger-menu__btn '),
+        burgerBtn = document.querySelector('.burger-menu__btn '),
         burgerClose = document.querySelector('.burger-menu__close'),
         burgerMenu = document.querySelector('.menu__small-screen'),
         body = document.querySelector('body');

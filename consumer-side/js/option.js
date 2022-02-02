@@ -1,8 +1,7 @@
 
 
 const swiper2 = new Swiper(".thumbSwiper", {
-    slidesPerView: 2,
-    
+    slidesPerView: 2, 
     freeMode: true,
     watchSlidesProgress: true 
  });
@@ -22,7 +21,8 @@ const tabs = document.querySelectorAll('.option__tab'),
         optionWrapper =document.querySelector('.option__wrapper'),
         oprionRight = document.querySelector('.option__right'),
         optionsPanel = document.querySelector('.option__panel'),
-        btns = document.querySelectorAll('.button');
+        btns = document.querySelectorAll('.button'),
+        loadProgress = document.querySelector('.photo__load-progress');
         
         // body = document.querySelector('body'),
         // slideColor = document.querySelector('.slide-color'),
@@ -56,18 +56,33 @@ if(activeTab == "1"){
 }
 
 items.forEach(card => {
-    if(card.classList.contains('active')){
-        targetImg.setAttribute('src', card.children[0].getAttribute('src'))
+    if(card.classList.contains('active')){ 
+        loadPhoto()
+        setTimeout(() => {
+            targetImg.classList.add('show')
+            targetImg.setAttribute('src', card.children[0].getAttribute('src'))
+        }, 1500)
     }
-    card.addEventListener('click', ()=> {
+    card.addEventListener('click', ()=> {  
+        loadPhoto(); 
+        targetImg.classList.remove('show')
         items.forEach(e => e.classList.remove('active'))
-        card.classList.add('active')
-        targetImg.setAttribute('src', card.children[0].getAttribute('src'))
+        card.classList.add('active');
+        console.log("sf");
+        setTimeout(() => {
+            targetImg.classList.add('show')
+            targetImg.setAttribute('src', card.children[0].getAttribute('src'))
+        }, 1400)
     })
     
 })
 
- 
+ function loadPhoto() { 
+    loadProgress.closest('.photo__load').classList.remove('hide');
+    setTimeout(() => { loadProgress.classList.add('work')}, 700);
+    setTimeout(()=> { loadProgress.closest('.photo__load').classList.add('hide')}, 1400);
+    setTimeout(()=> { loadProgress.classList.remove('work')}, 1400)  ;
+ }
  
 class Color {
     constructor(option) {

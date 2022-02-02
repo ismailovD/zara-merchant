@@ -37,8 +37,7 @@
  
  
 .p14 .choose__card-title {
-    margin-bottom: 5px;
-    height: 100%
+    margin-bottom: 5px; 
 }
  
 .p14 .choose__text {
@@ -50,11 +49,7 @@
     cursor: pointer
 }
 @media (max-width: 1199px) { 
-  
-    .p14 .choose__card {
-        max-width: 300px
-    }
-  
+   
     .p14 .choose__card-title {
         margin-bottom: 5px
     }

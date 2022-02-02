@@ -1,25 +1,81 @@
- 
-.p8 .choose__card {
-    padding: 13px 57px 13px 30px;
-    min-height: 70px;
-    height: 100%;
-    margin-bottom: 0
+.p8__card {
+    -webkit-box-flex: 1;
+        -ms-flex: auto 1 0px;
+            flex: auto 1 0;   
+    width: -webkit-fit-content;   
+    width: -moz-fit-content;   
+    width: fit-content;
+    position: relative;
 }
 
-.p8 .choose__card.active {
+.p8__label {
+    width: 100%;
+    padding: 24px 30px;
+    background: var(--reason-input-bg);
+    border-radius: 6px;
+    border: 1px solid var(--reason-input-border);
+    font-family: var(--f500-lato);
+    font-weight: 500;
+    color: var(--blue);
+    font-size: 18px;
+    line-height: 21.6px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 30px;
+    cursor: pointer
+}
+
+.p8__label.active {
     border: 2px solid var(--blue);
-    padding: 12px 56px 12px 29px
+    padding: 23px 29px
 }
 
-.p8 .choose__span {
-    color: var(--purple)
+.p8__input {
+    display: none
 }
+
+.p8__input-circle {
+    min-width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--reason-input-circle);
+    position: relative
+}
+
+.p8__input-circle::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: transparent
+}
+
+.p8__label.active .p8__input-circle {
+    border: 2px solid var(--blue)
+}
+
+.p8__label.active .p8__input-circle::after {
+    background: var(--blue)
+}
+ 
 
 @media (max-width: 1199px) { 
     
-    .p8 .choose__row>* {
-        margin-bottom: 30px
-    }
+  
    
 }
 
